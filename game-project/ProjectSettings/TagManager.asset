@@ -8,18 +8,12 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - walls
+  - 
   - Water
   - UI
-<<<<<<< HEAD
-  - Food
-  - Furniture
-  - Floor
-=======
-  - Floor
-  - Walls
   - 
->>>>>>> upstream/main
+  - 
+  - 
   - 
   - 
   - 
