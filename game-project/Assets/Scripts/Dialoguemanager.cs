@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using System;
 
  
 public class DialogueManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public Image characterIcon;
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueArea;
+    public GameObject textboxes;
  
     private Queue<DialogueLine> lines;
     
@@ -20,11 +22,13 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.2f;
  
     public Animator animator;
+    
  
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
+        textboxes.SetActive(false);
  
         lines = new Queue<DialogueLine>();
     }
@@ -33,8 +37,10 @@ public class DialogueManager : MonoBehaviour
     {
         
         isDialogueActive = true;
+        textboxes.SetActive(true);
+
  
-        animator.Play("show");
+        //animator.Play("show");
  
         lines.Clear();
  
@@ -53,6 +59,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
+
  
         DialogueLine currentLine = lines.Dequeue();
  
@@ -77,7 +84,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         isDialogueActive = false;
+        textboxes.SetActive(false);
+
         
-        animator.Play("hide");
+        //animator.Play("hide");
     }
 }
