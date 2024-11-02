@@ -1,14 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+/**
+ * Class that handles all global variables shared between scenes.
+ * To use the functions here, call <code>MainManager.instance</code>,
+ * followed by the function you want to call.
+ */
+public class MainManager : MonoBehaviour {
+    public static MainManager instance;
+    private int dementiaCounter;
 
-public class MainManager : MonoBehaviour
-{
-    public static MainManager INSTANCE;
+    private void Awake() {
+        if (instance != null) {
+            Destroy(gameObject);
+            return;
+        }
 
-    private void Awake()
-    {
-        INSTANCE = this;
+        instance = this;
+        this.dementiaCounter = 0;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public int getDementiaCounter() {
+        Debug.Log("Dementia counter retrieved." 
+            + "Value of counter is: " + this.dementiaCounter);
+        return this.dementiaCounter;
+    }
+
+    public void incrementDementiaCounter() {
+        this.dementiaCounter++;
+        Debug.Log("Dementia counter has been incremented."
+            + "counter is now at: " + this.dementiaCounter);
     }
 }
