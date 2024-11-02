@@ -2106,6 +2106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 196780451}
+  - component: {fileID: 196780452}
   m_Layer: 0
   m_Name: Fruit
   m_TagString: Untagged
@@ -2132,6 +2133,20 @@ Transform:
   - {fileID: 2079214735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &196780452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196780450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines: []
 --- !u!1 &206311881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,6 +2578,8 @@ GameObject:
   m_Component:
   - component: {fileID: 433993774}
   - component: {fileID: 433993773}
+  - component: {fileID: 433993775}
+  - component: {fileID: 433993776}
   m_Layer: 0
   m_Name: meat
   m_TagString: Untagged
@@ -2637,6 +2654,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1721745514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433993775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433993772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab40aea2bacdbea4a86f3e33156c29b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterIcon: {fileID: 0}
+  charactername: {fileID: 0}
+  dialoguearea: {fileID: 0}
+  isDialogueActive: 0
+  typingSpeed: 0.2
+  animator: {fileID: 0}
+--- !u!114 &433993776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433993772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: 
+        icon: {fileID: 0}
+      line: 
+    - character:
+        name: 
+        icon: {fileID: 0}
+      line: 
 --- !u!1 &519995145
 GameObject:
   m_ObjectHideFlags: 0
