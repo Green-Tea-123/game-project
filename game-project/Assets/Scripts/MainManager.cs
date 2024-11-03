@@ -9,6 +9,7 @@ using UnityEngine;
 public class MainManager : MonoBehaviour {
     public static MainManager instance;
     private int dementiaCounter;
+    private int day;
 
     private void Awake() {
         if (instance != null) {
@@ -18,6 +19,7 @@ public class MainManager : MonoBehaviour {
 
         instance = this;
         this.dementiaCounter = 0;
+        this.day = 1;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -31,5 +33,13 @@ public class MainManager : MonoBehaviour {
         this.dementiaCounter++;
         Debug.Log("Dementia counter has been incremented."
             + "counter is now at: " + this.dementiaCounter);
+    }
+
+    public int getDay() {
+        return this.day;
+    }
+
+    public void incrementDay() {
+        this.day++;
     }
 }
