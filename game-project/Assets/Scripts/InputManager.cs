@@ -77,6 +77,10 @@ public class InputManager : MonoBehaviour
        Movement =  _moveaction.ReadValue<Vector2>();
         interactPressed = _interaction.WasPressedThisFrame();
         submitPressed = _submission.WasPressedThisFrame();
+        if (DialogueManager.GetInstance().dialogueIsPlaying)
+        {
+            
+        }
     }
 
      public bool GetSubmitPressed() 

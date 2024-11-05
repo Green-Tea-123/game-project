@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialoguePanel;
+    [SerializeField] private GameObject Nextbutton;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
@@ -47,7 +48,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
-        for (int lengz = 0; lengz < 3; lengz++) {
+        for (int lengz = 0; lengz < choices.Length; lengz++) {
             choices[lengz].SetActive(false);
         }
 
@@ -87,9 +88,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         // reset portrait, layout, and speaker
-        displayNameText.text = "???";
-        portraitAnimator.Play("default");
-        layoutAnimator.Play("right");
+
 
         ContinueStory();
     }
@@ -103,7 +102,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
     }
 
-    private void ContinueStory() 
+    public void ContinueStory() 
     {
         if (currentStory.canContinue) 
         {
@@ -156,6 +155,8 @@ public class DialogueManager : MonoBehaviour
     private void DisplayChoices() 
     {
         List<Choice> currentChoices = currentStory.currentChoices;
+        Nextbutton.SetActive(false);
+
 
         // defensive check to make sure our UI can support the number of choices coming in
         if (currentChoices.Count > choices.Length)
@@ -196,6 +197,7 @@ public class DialogueManager : MonoBehaviour
         // NOTE: The below two lines were added to fix a bug after the Youtube video was made
         InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script
         ContinueStory();
+        Nextbutton.SetActive(true);
     }
 
 }

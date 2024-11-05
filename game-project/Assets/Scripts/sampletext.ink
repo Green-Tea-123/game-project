@@ -1,4 +1,4 @@
-this is a test
+this is a test  #speaker: Son #protrait:Happyson
 *[aasd]
     hi
 *[zzsa]
