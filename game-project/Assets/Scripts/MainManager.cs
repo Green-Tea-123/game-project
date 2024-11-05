@@ -14,9 +14,18 @@ public class MainManager : MonoBehaviour {
     private int day;
     private HashSet<string> tasks;
     private HashSet<string> tasksDone;
+    private HashSet<string> morningMeds;
+    private HashSet<string> morningMedsTaken;
+    private HashSet<string> eveningMeds;
+    private HashSet<string> eveningMedsTaken;
+    private HashSet<string> groceries;
+    private HashSet<string> groceriesBought;
     // kitchen activites
     public static readonly string BREAKFAST = "Make breakfast";
-    public static readonly string MEDICINE = "Take medicine";
+    public static readonly string MEDICINE_PINK = "Take pink medicine";
+    public static readonly string MEDICINE_BLUE = "Take blue medicine";
+    public static readonly string MEDICINE_GREEN = "Take green medicine";
+    public static readonly string MEDICINE_YELLOW = "Take yellow medicine";
 
     // road activites
     public static readonly string TAICHI = "Attend Taichi session";
@@ -43,7 +52,7 @@ public class MainManager : MonoBehaviour {
         instance = this;
         this.dementiaCounter = 0;
         this.day = 1;
-        this.tasks = getDay1List();
+        getDay1List();
         this.tasksDone = new HashSet<string>();
         DontDestroyOnLoad(gameObject);
     }
@@ -68,20 +77,23 @@ public class MainManager : MonoBehaviour {
         this.day++;
     }
 
-    public static HashSet<string> getDay1List() {
-        HashSet<string> list = new HashSet<string>();
-        list.Add(BREAKFAST);
-        list.Add(MEDICINE);
-        list.Add(TAICHI);
-        list.Add(GROCERIES_CABBAGE);
-        list.Add(GROCERIES_POTATO);
-        list.Add(GROCERIES_CHICKEN);
-        return list;
+    public void getDay1List() {
+        this.tasks = new HashSet<string>();
+        this.morningMeds = new HashSet<string>();
+        this.eveningMeds = new HashSet<string>();
+        this.groceries = new HashSet<string>();
+        this.tasks.Add(BREAKFAST);
+        this.morningMeds.Add(MEDICINE_PINK);
+        this.tasks.Add(TAICHI);
+        this.groceries.Add(GROCERIES_CABBAGE);
+        this.groceries.Add(GROCERIES_POTATO);
+        this.groceries.Add(GROCERIES_CHICKEN);
+        this.eveningMeds.Add(MEDICINE_BLUE);
     }
 
     public static HashSet<string> getDay2List() {
         HashSet<string> list = new HashSet<string>();
-        list.Add(MEDICINE);
+        list.Add(MEDICINE_GREEN);
         list.Add(MAHJONG);
         list.Add(CLINIC);
         return list;
@@ -90,7 +102,7 @@ public class MainManager : MonoBehaviour {
     public static HashSet<string> getDay3List() {
         HashSet<string> list = new HashSet<string>();
         list.Add(BREAKFAST);
-        list.Add(MEDICINE);
+        list.Add(MEDICINE_GREEN);
         list.Add(GROCERIES_FISH);
         list.Add(GROCERIES_GINGER);
         return list;
@@ -99,7 +111,7 @@ public class MainManager : MonoBehaviour {
     public static HashSet<string> getDay4List() {
         HashSet<string> list = new HashSet<string>();
         list.Add(BREAKFAST);
-        list.Add(MEDICINE);
+        list.Add(MEDICINE_GREEN);
         list.Add(GROCERIES_CARDAMOM);
         list.Add(GROCERIES_BEEF);
         list.Add(GROCERIES_CARROT);
@@ -120,7 +132,7 @@ public class MainManager : MonoBehaviour {
     public void updateDayList() {
         switch (this.day) {
             case 1:
-                this.tasks = getDay1List();
+                getDay1List();
                 break;
             case 2:
                 this.tasks = getDay2List();
