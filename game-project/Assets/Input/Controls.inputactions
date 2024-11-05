@@ -15,21 +15,21 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Interact",
+                    "name": "interact",
                     "type": "Button",
                     "id": "6210ae1b-1f2a-4c67-bd19-b9b07809c407",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Submit",
+                    "name": "submit",
                     "type": "Button",
                     "id": "fb4960f5-54e1-4852-9d25-9d8b162addf5",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "initialStateCheck": false
                 }
             ],
@@ -148,10 +148,10 @@
                     "name": "",
                     "id": "1076a79a-a34d-4869-a4e7-244abc84fbc6",
                     "path": "<Keyboard>/z",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -159,10 +159,10 @@
                     "name": "",
                     "id": "511eac31-c709-4371-85f2-f73e19a24fe9",
                     "path": "<Keyboard>/z",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Submit",
+                    "action": "submit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

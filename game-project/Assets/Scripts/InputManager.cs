@@ -9,6 +9,10 @@ public class InputManager : MonoBehaviour
 
     private PlayerInput _playerinput;
     private InputAction _moveaction;
+    private InputAction _interaction;
+    private InputAction _submission;
+
+
     private bool interactPressed = false;
 
     private bool submitPressed = false;
@@ -64,11 +68,15 @@ public class InputManager : MonoBehaviour
     {
       _playerinput = GetComponent<PlayerInput>(); 
       _moveaction = _playerinput.actions["Move"];
+      _interaction = _playerinput.actions["interact"];
+      _submission  = _playerinput.actions["submit"];
     }
 
     void Update()
     {
        Movement =  _moveaction.ReadValue<Vector2>();
+        interactPressed = _interaction.WasPressedThisFrame();
+        submitPressed = _submission.WasPressedThisFrame();
     }
 
      public bool GetSubmitPressed() 

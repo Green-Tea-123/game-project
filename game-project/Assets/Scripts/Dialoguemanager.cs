@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject[] choices;
     private TextMeshProUGUI[] choicesText;
 
+
     private Story currentStory;
     public bool dialogueIsPlaying { get; private set; }
 
@@ -46,9 +47,12 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
+        for (int lengz = 0; lengz < 3; lengz++) {
+            choices[lengz].SetActive(false);
+        }
 
         // get the layout animator
-        layoutAnimator = dialoguePanel.GetComponent<Animator>();
+        //layoutAnimator = dialoguePanel.GetComponent<Animator>();
 
         // get all of the choices text 
         choicesText = new TextMeshProUGUI[choices.Length];
