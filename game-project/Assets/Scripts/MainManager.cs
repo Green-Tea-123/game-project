@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
 using System.Threading.Tasks;
 using UnityEngine;
+
 /**
  * Class that handles all global variables shared between scenes.
  * To use the functions here, call <code>MainManager.instance</code>,
  * followed by the function you want to call.
  */
-public class MainManager : MonoBehaviour {
+public class MainManager : MonoBehaviour
+{
     public static MainManager instance;
     private int dementiaCounter;
     private int day;
@@ -20,14 +22,15 @@ public class MainManager : MonoBehaviour {
     private HashSet<string> eveningMedsTaken;
     private HashSet<string> groceries;
     private HashSet<string> groceriesBought;
-    // kitchen activites
+
+    // kitchen activities
     public static readonly string BREAKFAST = "Make breakfast";
     public static readonly string MEDICINE_PINK = "Take pink medicine";
     public static readonly string MEDICINE_BLUE = "Take blue medicine";
     public static readonly string MEDICINE_GREEN = "Take green medicine";
     public static readonly string MEDICINE_YELLOW = "Take yellow medicine";
 
-    // road activites
+    // road activities
     public static readonly string TAICHI = "Attend Taichi session";
     public static readonly string MAHJONG = "Play mahjong";
     public static readonly string CLINIC = "Get medicine at the clinic";
@@ -43,8 +46,10 @@ public class MainManager : MonoBehaviour {
     public static readonly string GROCERIES_GINGER = "Buy some ginger";
     public static readonly string GROCERIES_CARDAMOM = "Buy some cardamom";
 
-    private void Awake() {
-        if (instance != null) {
+    private void Awake()
+    {
+        if (instance != null)
+        {
             Destroy(gameObject);
             return;
         }
@@ -57,95 +62,135 @@ public class MainManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
-    public int getDementiaCounter() {
-        Debug.Log("Dementia counter retrieved." 
+    public int getDementiaCounter()
+    {
+        Debug.Log("Dementia counter retrieved."
             + "Value of counter is: " + this.dementiaCounter);
         return this.dementiaCounter;
     }
 
-    public void incrementDementiaCounter() {
+    public void incrementDementiaCounter()
+    {
         this.dementiaCounter++;
         Debug.Log("Dementia counter has been incremented."
-            + "counter is now at: " + this.dementiaCounter);
+            + "Counter is now at: " + this.dementiaCounter);
     }
 
-    public int getDay() {
+    public int getDay()
+    {
         return this.day;
     }
 
-    public void incrementDay() {
+    public void incrementDay()
+    {
         this.day++;
+        updateDayList();
     }
 
-    public void getDay1List() {
+    // Define task lists for each day, following the same format
+    public void getDay1List()
+    {
         this.tasks = new HashSet<string>();
         this.morningMeds = new HashSet<string>();
         this.eveningMeds = new HashSet<string>();
         this.groceries = new HashSet<string>();
+
         this.tasks.Add(BREAKFAST);
-        this.morningMeds.Add(MEDICINE_PINK);
         this.tasks.Add(TAICHI);
         this.groceries.Add(GROCERIES_CABBAGE);
         this.groceries.Add(GROCERIES_POTATO);
         this.groceries.Add(GROCERIES_CHICKEN);
+        this.morningMeds.Add(MEDICINE_GREEN);
+        this.morningMeds.Add(MEDICINE_PINK);
         this.eveningMeds.Add(MEDICINE_BLUE);
     }
 
-    public static HashSet<string> getDay2List() {
-        HashSet<string> list = new HashSet<string>();
-        list.Add(MEDICINE_GREEN);
-        list.Add(MAHJONG);
-        list.Add(CLINIC);
-        return list;
+    public void getDay2List()
+    {
+        this.tasks = new HashSet<string>();
+        this.morningMeds = new HashSet<string>();
+        this.eveningMeds = new HashSet<string>();
+        this.groceries = new HashSet<string>();
+
+        this.tasks.Add(MAHJONG);
+        this.tasks.Add(CLINIC);
+        this.groceries.Add(GROCERIES_CHICKEN);
+        this.morningMeds.Add(MEDICINE_GREEN);
+        this.eveningMeds.Add(MEDICINE_BLUE);
+        this.eveningMeds.Add(MEDICINE_YELLOW);
     }
 
-    public static HashSet<string> getDay3List() {
-        HashSet<string> list = new HashSet<string>();
-        list.Add(BREAKFAST);
-        list.Add(MEDICINE_GREEN);
-        list.Add(GROCERIES_FISH);
-        list.Add(GROCERIES_GINGER);
-        return list;
+    public void getDay3List()
+    {
+        this.tasks = new HashSet<string>();
+        this.morningMeds = new HashSet<string>();
+        this.eveningMeds = new HashSet<string>();
+        this.groceries = new HashSet<string>();
+
+        this.tasks.Add(BREAKFAST);
+        this.groceries.Add(GROCERIES_FISH);
+        this.groceries.Add(GROCERIES_GINGER);
+        this.groceries.Add(GROCERIES_GINGER);
+        this.morningMeds.Add(MEDICINE_GREEN);
+        this.morningMeds.Add(MEDICINE_PINK);
+        this.eveningMeds.Add(MEDICINE_BLUE);
     }
 
-    public static HashSet<string> getDay4List() {
-        HashSet<string> list = new HashSet<string>();
-        list.Add(BREAKFAST);
-        list.Add(MEDICINE_GREEN);
-        list.Add(GROCERIES_CARDAMOM);
-        list.Add(GROCERIES_BEEF);
-        list.Add(GROCERIES_CARROT);
-        return list;
+    public void getDay4List()
+    {
+        this.tasks = new HashSet<string>();
+        this.morningMeds = new HashSet<string>();
+        this.eveningMeds = new HashSet<string>();
+        this.groceries = new HashSet<string>();
+
+        this.tasks.Add(BREAKFAST);
+        this.morningMeds.Add(MEDICINE_GREEN);
+        this.groceries.Add(GROCERIES_CARDAMOM);
+        this.groceries.Add(GROCERIES_BEEF);
+        this.groceries.Add(GROCERIES_CARROT);
+        this.morningMeds.Add(MEDICINE_GREEN);
+        this.eveningMeds.Add(MEDICINE_BLUE);
+        this.eveningMeds.Add(MEDICINE_YELLOW);
     }
 
-    public void addTaskDone(string task) {
+    public void addTaskDone(string task)
+    {
         this.tasksDone.Add(task);
     }
 
-    public void checkTasks() {
-        bool isSame = this.tasks.Equals(this.tasksDone);
-        if (!isSame) {
+    public void checkTasks()
+    {
+        bool allTasksCompleted = this.tasks.SetEquals(this.tasksDone);
+        Debug.Log("Tasks checked. All tasks completed: " + allTasksCompleted);
+        if (!allTasksCompleted)
+        {
             incrementDementiaCounter();
         }
     }
 
-    public void updateDayList() {
-        switch (this.day) {
+    public void updateDayList()
+    {
+        // Call the appropriate list initializer based on the current day
+        switch (this.day)
+        {
             case 1:
                 getDay1List();
                 break;
             case 2:
-                this.tasks = getDay2List();
+                getDay2List();
                 break;
             case 3:
-                this.tasks = getDay3List();
+                getDay3List();
                 break;
             case 4:
-                this.tasks = getDay4List();
+                getDay4List();
                 break;
             default:
-                Debug.Assert(false);
+                Debug.LogWarning("No list available for day: " + this.day);
                 break;
         }
+
+        // Reset tasksDone for the new day
+        this.tasksDone.Clear();
     }
 }
