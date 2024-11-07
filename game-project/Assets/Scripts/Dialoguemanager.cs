@@ -35,8 +35,13 @@ public class DialogueManager : MonoBehaviour
         if (instance != null)
         {
             Debug.LogWarning("Found more than one Dialogue Manager in the scene");
+            Destroy(gameObject);
+            return;
         }
         instance = this;
+
+        DontDestroyOnLoad(gameObject);
+
     }
 
     public static DialogueManager GetInstance() 
@@ -86,8 +91,9 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-
+        Nextbutton.SetActive(true);
         // reset portrait, layout, and speaker
+
 
 
         ContinueStory();
