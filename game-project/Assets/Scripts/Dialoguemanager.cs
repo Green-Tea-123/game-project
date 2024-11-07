@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    
 
     private void Awake() 
     {
@@ -91,7 +92,6 @@ public class DialogueManager : MonoBehaviour
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
-        Nextbutton.SetActive(true);
         // reset portrait, layout, and speaker
 
 
@@ -110,8 +110,10 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueStory() 
     {
+        Nextbutton.SetActive(true);
         if (currentStory.canContinue) 
         {
+            
             // set text for the current dialogue line
             dialogueText.text = currentStory.Continue();
             // display choices, if any, for this dialogue line
@@ -161,7 +163,6 @@ public class DialogueManager : MonoBehaviour
     private void DisplayChoices() 
     {
         List<Choice> currentChoices = currentStory.currentChoices;
-        Nextbutton.SetActive(false);
 
 
         // defensive check to make sure our UI can support the number of choices coming in
@@ -175,6 +176,7 @@ public class DialogueManager : MonoBehaviour
         // enable and initialize the choices up to the amount of choices for this line of dialogue
         foreach(Choice choice in currentChoices) 
         {
+            Nextbutton.SetActive(false);
             choices[index].gameObject.SetActive(true);
             choicesText[index].text = choice.text;
             index++;

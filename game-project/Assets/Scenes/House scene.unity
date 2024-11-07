@@ -3987,6 +3987,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: dialogue manager
       objectReference: {fileID: 0}
+    - target: {fileID: 4690012475042094313, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+      propertyPath: m_Name
+      value: next button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690012475042094313, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5988063876381900175, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
