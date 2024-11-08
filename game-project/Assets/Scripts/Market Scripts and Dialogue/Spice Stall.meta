@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:game-project/Assets/Scripts/Market Scripts and Dialogue/Spice Stall.meta
 guid: fe4728239a89acf48990f13b30b1b1ce
+=======
+guid: 38f5ddc5e30441043918adf99cb71ea5
+>>>>>>> ca63ace5da010a5b0ce463cf81cc5a4543e7c77c:game-project/Assets/Scripts/Market Scripts and Dialogue/Fruit Stall.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
