@@ -79,7 +79,11 @@ public class InputManager : MonoBehaviour
         submitPressed = _submission.WasPressedThisFrame();
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            
+            _moveaction.Disable();
+        }
+        else
+        {
+            _moveaction.Enable();
         }
     }
 

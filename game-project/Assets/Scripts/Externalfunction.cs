@@ -92,9 +92,9 @@ public class Externalfunction
         story.UnbindExternalFunction("getGROCERIES_CHICKEN");
         story.UnbindExternalFunction("getGROCERIES_GINGER");
         story.UnbindExternalFunction("getGROCERIES_CARDAMOM");
-        story.UnbindExternalFunction("getGROCERIES_Prawn");
-        story.UnbindExternalFunction("getGROCERIES_Watermelon");
-        story.UnbindExternalFunction("getGROCERIES_Pork");
+        story.UnbindExternalFunction("getGROCERIES_PRAWN");
+        story.UnbindExternalFunction("getGROCERIES_WATERMELON");
+        story.UnbindExternalFunction("getGROCERIES_PORK");
         story.UnbindExternalFunction("addTaskDone");
 
 
