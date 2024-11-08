@@ -45,6 +45,9 @@ public class MainManager : MonoBehaviour
     public static readonly string GROCERIES_CHICKEN = "Buy a chicken";
     public static readonly string GROCERIES_GINGER = "Buy some ginger";
     public static readonly string GROCERIES_CARDAMOM = "Buy some cardamom";
+    public static readonly string GROCERIES_PRAWN = "Buy some prawn";
+    public static readonly string GROCERIES_WATERMELON = "Buy some watermelon";
+    public static readonly string GROCERIES_PORK = "Buy some pork";
 
     private void Awake()
     {
