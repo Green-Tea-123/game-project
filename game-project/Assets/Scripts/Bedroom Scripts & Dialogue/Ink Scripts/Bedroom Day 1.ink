@@ -1,4 +1,5 @@
 -> start_dialogue
+
 ===start_dialogue===
 #speaker: Mother #portrait:Happymother
 Aiyoh… these birds ah, so noisy every morning, not even let one old lady sleep longer a bit 
