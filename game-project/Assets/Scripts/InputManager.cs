@@ -82,19 +82,11 @@ public class InputManager : MonoBehaviour
         submitPressed = _submission.WasPressedThisFrame();
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-<<<<<<< Updated upstream
-            _moveaction.Disable();
-        }
-        else
-        {
-            _moveaction.Enable();
-=======
             pm.canmove = false;
         }
         else
         {
             pm.canmove = true;
->>>>>>> Stashed changes
         }
     }
 
