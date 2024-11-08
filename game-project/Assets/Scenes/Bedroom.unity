@@ -1042,9 +1042,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   day1Json: {fileID: 4900000, guid: 3b667137d6ffa5446a927894bf0aa91f, type: 3}
-  day2Json: {fileID: 4900000, guid: 3b667137d6ffa5446a927894bf0aa91f, type: 3}
-  day3Json: {fileID: 4900000, guid: 3b667137d6ffa5446a927894bf0aa91f, type: 3}
-  day4Json: {fileID: 4900000, guid: 3b667137d6ffa5446a927894bf0aa91f, type: 3}
+  day2Json: {fileID: 4900000, guid: c8c9fdbcddccc184dbae577a54b7d91e, type: 3}
+  day3Json: {fileID: 4900000, guid: c3cd45cd6f602f643bf369768614f987, type: 3}
+  day4Json: {fileID: 4900000, guid: 534c057bd8d3f56478ad529a167e5f55, type: 3}
 --- !u!1 &1130389730
 GameObject:
   m_ObjectHideFlags: 0

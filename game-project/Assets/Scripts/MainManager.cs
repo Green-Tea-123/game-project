@@ -25,10 +25,10 @@ public class MainManager : MonoBehaviour
 
     // kitchen activities
     public static readonly string BREAKFAST = "Make breakfast";
-    public static readonly string MEDICINE_PINK = "Take pink medicine";
-    public static readonly string MEDICINE_BLUE = "Take blue medicine";
-    public static readonly string MEDICINE_GREEN = "Take green medicine";
-    public static readonly string MEDICINE_YELLOW = "Take yellow medicine";
+    public static readonly string MEDICINE_PINK = "Take pink medicine"; // tues and thur, morning
+    public static readonly string MEDICINE_BLUE = "Take blue medicine"; // every day, evening
+    public static readonly string MEDICINE_GREEN = "Take green medicine"; // every day, morning
+    public static readonly string MEDICINE_YELLOW = "Take yellow medicine"; // mon wed fri, evening
 
     // road activities
     public static readonly string TAICHI = "Attend Taichi session";
@@ -129,7 +129,6 @@ public class MainManager : MonoBehaviour
 
         this.tasks.Add(BREAKFAST);
         this.groceries.Add(GROCERIES_FISH);
-        this.groceries.Add(GROCERIES_GINGER);
         this.groceries.Add(GROCERIES_GINGER);
         this.morningMeds.Add(MEDICINE_GREEN);
         this.morningMeds.Add(MEDICINE_PINK);
