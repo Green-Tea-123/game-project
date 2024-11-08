@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
     private const string LAYOUT_TAG = "layout";
+    private Externalfunction inkExternalfunction;
     
 
     private void Awake() 
@@ -40,7 +41,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         instance = this;
-
+        inkExternalfunction = new Externalfunction();
         DontDestroyOnLoad(gameObject);
 
     }
@@ -87,14 +88,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void EnterDialogueMode(TextAsset inkJSON) 
+    public void EnterDialogueMode(TextAsset inkJSON)
     {
         currentStory = new Story(inkJSON.text);
         dialogueIsPlaying = true;
         dialoguePanel.SetActive(true);
         // reset portrait, layout, and speaker
-
-
+        inkExternalfunction.bind(currentStory);
 
         ContinueStory();
     }
@@ -102,7 +102,7 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator ExitDialogueMode() 
     {
         yield return new WaitForSeconds(0.2f);
-
+        inkExternalfunction.unbind(currentStory);
         dialogueIsPlaying = false;
         dialoguePanel.SetActive(false);
         dialogueText.text = "";
