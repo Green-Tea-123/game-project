@@ -12,6 +12,8 @@ public class DialogueTrigger : MonoBehaviour
 
     private bool playerInRange;
 
+    private bool interacteditem = false;
+
     private void Awake() 
     {
         playerInRange = false;
@@ -20,11 +22,12 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Update() 
     {
-        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying) 
+        if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !interacteditem) 
         {
             visualCue.SetActive(true);
             if (InputManager.GetInstance().GetInteractPressed()) 
             {
+                interacteditem = true;
                 DialogueManager.GetInstance().EnterDialogueMode(inkJSON);
             }
         }
