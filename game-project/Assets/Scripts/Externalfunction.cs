@@ -7,7 +7,7 @@ public class Externalfunction
 {
     public void bind(Story story)
     {
-       story.BindExternalFunction("getBreakfast", () => {
+        story.BindExternalFunction("getBreakfast", () => {
             return MainManager.BREAKFAST;
         });
         story.BindExternalFunction("getMEDICINE_PINK", () => {
