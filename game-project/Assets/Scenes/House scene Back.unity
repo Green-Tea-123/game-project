@@ -1607,6 +1607,7 @@ GameObject:
   - component: {fileID: 893589273}
   - component: {fileID: 893589276}
   - component: {fileID: 893589274}
+  - component: {fileID: 893589277}
   m_Layer: 0
   m_Name: Collider_Top_ToBedroom
   m_TagString: Untagged
@@ -1726,6 +1727,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &893589277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893589272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Bedroom Back
 --- !u!1 &902923122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5272,7 +5286,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2041849399}
   - component: {fileID: 2041849402}
-  - component: {fileID: 2041849401}
   - component: {fileID: 2041849400}
   m_Layer: 0
   m_Name: Collider_Bottom_ToRoad
@@ -5341,19 +5354,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2041849401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041849398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextSceneName: Road
 --- !u!212 &2041849402
 SpriteRenderer:
   m_ObjectHideFlags: 0

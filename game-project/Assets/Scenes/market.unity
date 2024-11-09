@@ -2222,8 +2222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines: []
+  visualCue: {fileID: 0}
+  inkJSON: {fileID: 0}
 --- !u!1 &206311881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,13 +2743,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab40aea2bacdbea4a86f3e33156c29b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterIcon: {fileID: 0}
-  characterName: {fileID: 0}
-  dialogueArea: {fileID: 0}
-  textboxes: {fileID: 0}
-  isDialogueActive: 0
-  typingSpeed: 0.2
-  animator: {fileID: 0}
+  dialoguePanel: {fileID: 0}
+  Nextbutton: {fileID: 0}
+  dialogueText: {fileID: 0}
+  displayNameText: {fileID: 0}
+  portraitAnimator: {fileID: 0}
+  choices: []
 --- !u!114 &433993776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,16 +2761,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-    dialogueLines:
-    - character:
-        name: 
-        icon: {fileID: 0}
-      line: 
-    - character:
-        name: 
-        icon: {fileID: 0}
-      line: 
+  visualCue: {fileID: 0}
+  inkJSON: {fileID: 0}
 --- !u!1 &519995145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4090,7 +4081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Road
+  nextSceneName: Road Back
 --- !u!61 &1195077226
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -61,7 +61,6 @@ public class MainManager : MonoBehaviour
         this.dementiaCounter = 0;
         this.day = 1;
         getDay1List();
-        this.tasksDone = new HashSet<string>();
         DontDestroyOnLoad(gameObject);
     }
 
@@ -88,6 +87,7 @@ public class MainManager : MonoBehaviour
     {
         this.day++;
         updateDayList();
+        Debug.Log("Day incremented to " + this.day);
     }
 
     // Define task lists for each day, following the same format
@@ -97,6 +97,11 @@ public class MainManager : MonoBehaviour
         this.morningMeds = new HashSet<string>();
         this.eveningMeds = new HashSet<string>();
         this.groceries = new HashSet<string>();
+
+        this.tasksDone = new HashSet<string>();
+        this.morningMedsTaken = new HashSet<string>();
+        this.eveningMedsTaken = new HashSet<string>();
+        this.groceriesBought = new HashSet<string>();
 
         this.tasks.Add(BREAKFAST);
         this.tasks.Add(TAICHI);
@@ -115,6 +120,11 @@ public class MainManager : MonoBehaviour
         this.eveningMeds = new HashSet<string>();
         this.groceries = new HashSet<string>();
 
+        this.tasksDone = new HashSet<string>();
+        this.morningMedsTaken = new HashSet<string>();
+        this.eveningMedsTaken = new HashSet<string>();
+        this.groceriesBought = new HashSet<string>();
+
         this.tasks.Add(MAHJONG);
         this.tasks.Add(CLINIC);
         this.groceries.Add(GROCERIES_CHICKEN);
@@ -130,6 +140,11 @@ public class MainManager : MonoBehaviour
         this.eveningMeds = new HashSet<string>();
         this.groceries = new HashSet<string>();
 
+        this.tasksDone = new HashSet<string>();
+        this.morningMedsTaken = new HashSet<string>();
+        this.eveningMedsTaken = new HashSet<string>();
+        this.groceriesBought = new HashSet<string>();
+
         this.tasks.Add(BREAKFAST);
         this.groceries.Add(GROCERIES_FISH);
         this.groceries.Add(GROCERIES_GINGER);
@@ -144,6 +159,11 @@ public class MainManager : MonoBehaviour
         this.morningMeds = new HashSet<string>();
         this.eveningMeds = new HashSet<string>();
         this.groceries = new HashSet<string>();
+
+        this.tasksDone = new HashSet<string>();
+        this.morningMedsTaken = new HashSet<string>();
+        this.eveningMedsTaken = new HashSet<string>();
+        this.groceriesBought = new HashSet<string>();
 
         this.tasks.Add(BREAKFAST);
         this.groceries.Add(GROCERIES_CARDAMOM);
@@ -168,9 +188,9 @@ public class MainManager : MonoBehaviour
             incrementDementiaCounter();
         }
 
-        bool allMedicineTaken = this.morningMeds.SetEquals(this.morningMedsTaken)
-            && this.eveningMeds.SetEquals(this.eveningMedsTaken);
-        if (!allMedicineTaken) {
+        bool allMorningMedicineTaken = this.morningMeds.SetEquals(this.morningMedsTaken);
+        bool allEveningMedicineTaken = this.eveningMeds.SetEquals(this.eveningMedsTaken);
+        if (!(allMorningMedicineTaken && allEveningMedicineTaken)) {
             incrementDementiaCounter();
         }
 

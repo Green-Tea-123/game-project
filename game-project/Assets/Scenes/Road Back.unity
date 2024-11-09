@@ -608,7 +608,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &429961267
 Transform:
   m_ObjectHideFlags: 0
@@ -744,6 +744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435849192}
   - component: {fileID: 435849191}
+  - component: {fileID: 435849190}
   - component: {fileID: 435849193}
   m_Layer: 0
   m_Name: Collider_ToKitchen
@@ -752,6 +753,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &435849190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435849189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: House scene Back
 --- !u!212 &435849191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1475,7 +1489,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1349145245}
   - component: {fileID: 1349145246}
-  - component: {fileID: 1349145247}
   - component: {fileID: 1349145248}
   m_Layer: 0
   m_Name: ActualCollider
@@ -1551,19 +1564,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1349145247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349145244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextSceneName: Market
 --- !u!61 &1349145248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2232,11 +2232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.94
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.z
