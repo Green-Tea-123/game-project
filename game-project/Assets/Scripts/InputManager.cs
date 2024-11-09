@@ -19,6 +19,8 @@ public class InputManager : MonoBehaviour
 
     private static InputManager instance;
 
+    private PlayerMovement pm;
+
     private void Awake()
     {
         if (instance != null)
@@ -70,6 +72,7 @@ public class InputManager : MonoBehaviour
       _moveaction = _playerinput.actions["Move"];
       _interaction = _playerinput.actions["interact"];
       _submission  = _playerinput.actions["submit"];
+      pm = FindObjectOfType<PlayerMovement>(); 
     }
 
     void Update()
@@ -79,7 +82,11 @@ public class InputManager : MonoBehaviour
         submitPressed = _submission.WasPressedThisFrame();
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
-            
+            pm.canmove = false;
+        }
+        else
+        {
+            pm.canmove = true;
         }
     }
 
