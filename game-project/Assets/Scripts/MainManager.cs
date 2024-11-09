@@ -146,7 +146,6 @@ public class MainManager : MonoBehaviour
         this.groceries = new HashSet<string>();
 
         this.tasks.Add(BREAKFAST);
-        this.morningMeds.Add(MEDICINE_GREEN);
         this.groceries.Add(GROCERIES_CARDAMOM);
         this.groceries.Add(GROCERIES_BEEF);
         this.groceries.Add(GROCERIES_CARROT);
