@@ -43,7 +43,7 @@ public class CutsceneManager : MonoBehaviour
         isCutsceneActive = false;
     }
 
-    private IEnumerator MoveToPosition(GameObject character, Vector3 target, float duration, int direction)
+    private IEnumerator MoveToPosition(GameObject character, Vector3 target, float speed, int direction)
     {
         Animator animator = character.GetComponent<Animator>();
 
@@ -54,6 +54,8 @@ public class CutsceneManager : MonoBehaviour
         }
 
         Vector3 startPosition = character.transform.position;
+        float distance = Vector3.Distance(startPosition, target);
+        float duration = distance / speed; // Calculate duration based on distance and speed
         float elapsed = 0;
 
         while (elapsed < duration)
@@ -62,7 +64,8 @@ public class CutsceneManager : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
-        character.transform.position = target;
+
+        character.transform.position = target; // Explicitly set final position
 
         if (animator != null)
         {
