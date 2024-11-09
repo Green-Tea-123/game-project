@@ -14,12 +14,15 @@ public class BedroomEndDay : MonoBehaviour
     [Header("Day 3 Ink")]
     [SerializeField] private TextAsset day3Json;
 
+    public CanvasGroup fadeCanvasGroup;
+    public float fadeSpeed = 1f;
+
     public string nextSceneName;
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player")) {
             handleEndOfDayDialogue();
             handleEndOfDayLogic();
-            SceneManager.LoadScene(nextSceneName);
+            StartCoroutine(handleSceneLoad());
         }
     }
 
@@ -44,5 +47,17 @@ public class BedroomEndDay : MonoBehaviour
                 Debug.LogError("Day is not within 1 to 3, error loading dialogue");
                 break;
         }
+    }
+
+    private IEnumerator handleSceneLoad() {
+        yield return new WaitWhile(() => DialogueManager.GetInstance().dialogueIsPlaying);
+        float alpha = 0f;
+        while (alpha < 1f) {
+            alpha += fadeSpeed * Time.deltaTime;
+            fadeCanvasGroup.alpha = alpha;
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(nextSceneName);
     }
 }

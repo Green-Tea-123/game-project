@@ -10,4 +10,8 @@ public class DayTextScript : MonoBehaviour {
     private void Start() {
         dayText.text = "Day " + MainManager.instance.getDay();
     }
+
+    private void Update() {
+        dayText.text = "Day " + MainManager.instance.getDay();
+    }
 }
