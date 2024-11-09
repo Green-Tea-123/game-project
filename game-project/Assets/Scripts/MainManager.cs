@@ -167,6 +167,17 @@ public class MainManager : MonoBehaviour
         {
             incrementDementiaCounter();
         }
+
+        bool allMedicineTaken = this.morningMeds.SetEquals(this.morningMedsTaken)
+            && this.eveningMeds.SetEquals(this.eveningMedsTaken);
+        if (!allMedicineTaken) {
+            incrementDementiaCounter();
+        }
+
+        bool allGroceriesBought = this.groceries.SetEquals(this.groceriesBought);
+        if (!allGroceriesBought) {
+            incrementDementiaCounter();
+        }
     }
 
     public void updateDayList()
