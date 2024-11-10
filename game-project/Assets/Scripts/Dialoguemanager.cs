@@ -194,18 +194,39 @@ public class DialogueManager : MonoBehaviour
     {
         // Event System requires we clear it first, then wait
         // for at least one frame before we set the current selected object.
-        EventSystem.current.SetSelectedGameObject(null);
+        /*EventSystem.current.SetSelectedGameObject(null);
         yield return new WaitForEndOfFrame();
-        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);
+        EventSystem.current.SetSelectedGameObject(choices[0].gameObject);*/
+        UnityEngine.UI.Selectable firstChoice = choices[0].GetComponent<UnityEngine.UI.Selectable>();
+
+        // Set the first choice as selected
+        firstChoice.Select();
+
+        // Wait for spacebar to be pressed
+        while (true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                // Do something when spacebar is pressed
+                Debug.Log("Spacebar was pressed!");
+                break;
+            }
+            yield return null;
+        }
+
+        // Return a value at the end of the method
+        yield return null;
     }
 
     public void MakeChoice(int choiceIndex)
     {
-        currentStory.ChooseChoiceIndex(choiceIndex);
+        /*currentStory.ChooseChoiceIndex(choiceIndex);
         // NOTE: The below two lines were added to fix a bug after the Youtube video was made
-        InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script
+        InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script*/
+        currentStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
-        Nextbutton.SetActive(true);
+  
+
     }
 
 }

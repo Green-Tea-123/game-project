@@ -69,6 +69,7 @@ public class Externalfunction
         });
         story.BindExternalFunction("addTaskDone", (string task) => {
             MainManager.instance.addTaskDone(task);
+            Debug.LogWarning("addtask triggered:"+task);
         });
 
     }

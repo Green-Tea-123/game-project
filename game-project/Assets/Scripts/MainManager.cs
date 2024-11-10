@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.ConstrainedExecution;
@@ -177,6 +178,10 @@ public class MainManager : MonoBehaviour
     public void addTaskDone(string task)
     {
         this.tasksDone.Add(task);
+        foreach (var valus in this.tasksDone)
+        {
+            Console.WriteLine(valus);
+        }
     }
 
     public void checkTasks()
