@@ -178,7 +178,22 @@ public class MainManager : MonoBehaviour
     public void addTaskDone(string task)
     {
         this.tasksDone.Add(task);
-        Debug.LogWarning("addtask triggered:"+task);
+        Debug.Log("addtask triggered:" + task);
+    }
+
+    public void addMorningMeds(string meds) {
+        this.morningMedsTaken.Add(meds);
+        Debug.Log("addMorningMeds triggered: " + meds);
+    }
+
+    public void addEveningMeds(string meds) {
+        this.eveningMedsTaken.Add(meds);
+        Debug.Log("addEveningMeds triggered: " + meds);
+    }
+
+    public void addGroceries(string item) {
+        this.groceriesBought.Add(item);
+        Debug.Log("addGroceries triggered: " + item);
     }
 
     public void checkTasks()
@@ -223,8 +238,5 @@ public class MainManager : MonoBehaviour
                 Debug.LogWarning("No list available for day: " + this.day);
                 break;
         }
-
-        // Reset tasksDone for the new day
-        this.tasksDone.Clear();
     }
 }
