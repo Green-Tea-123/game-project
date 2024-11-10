@@ -5144,6 +5144,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
+      propertyPath: day1Json
+      value: 
+      objectReference: {fileID: 4900000, guid: 67e832ede9caf0542908c7dc8f446fd9, type: 3}
+    - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
+      propertyPath: day2Json
+      value: 
+      objectReference: {fileID: 4900000, guid: bd94b46111e71454c923e5b7761b7bcf, type: 3}
+    - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
+      propertyPath: day3Json
+      value: 
+      objectReference: {fileID: 4900000, guid: eb6eebe802780fb49a6aa252e9253aff, type: 3}
+    - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
+      propertyPath: day4Json
+      value: 
+      objectReference: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

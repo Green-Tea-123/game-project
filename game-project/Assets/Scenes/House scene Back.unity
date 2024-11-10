@@ -5076,8 +5076,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 1290242170}
-  inkJSON: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
+  day1Json: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
+  day2Json: {fileID: 4900000, guid: bd94b46111e71454c923e5b7761b7bcf, type: 3}
+  day3Json: {fileID: 4900000, guid: 426360eb892b30849932c8d506a88b12, type: 3}
+  day4Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
 --- !u!1 &1973805520
 GameObject:
   m_ObjectHideFlags: 0

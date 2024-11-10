@@ -404,7 +404,8 @@ PrefabInstance:
       propertyPath: visualCue
       value: 
       objectReference: {fileID: 2119796966}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2293436649619784490, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
@@ -413,7 +414,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4012432656642840595, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 863040428}
+      addedObject: {fileID: 863040433}
   m_SourcePrefab: {fileID: 100100000, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
 --- !u!1 &270001988
 GameObject:
@@ -1368,7 +1369,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4012432656642840595, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
   m_PrefabInstance: {fileID: 208995929}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &863040428
+--- !u!4 &863040432 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2293436649619784490, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
+  m_PrefabInstance: {fileID: 208995929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &863040433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1377,14 +1383,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 863040427}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a12acc6c1f1921f4fa77f8af36e1dd3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 28b6dd02e066c8548bfd51566e220b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &863040432 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2293436649619784490, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
-  m_PrefabInstance: {fileID: 208995929}
-  m_PrefabAsset: {fileID: 0}
+  day1Json: {fileID: 0}
+  day2Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
+  day3Json: {fileID: 0}
+  day4Json: {fileID: 0}
 --- !u!1 &868026201
 GameObject:
   m_ObjectHideFlags: 0
