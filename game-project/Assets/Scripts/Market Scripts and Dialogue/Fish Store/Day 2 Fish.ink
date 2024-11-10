@@ -1,3 +1,5 @@
+EXTERNAL addGroceries(string)
+EXTERNAL getGROCERIES_FISH()
 -> start_dialogue
 
 ===start_dialogue===
@@ -22,6 +24,7 @@ Uncle Tan, you really know how to keep quality ah
 ===correct_choice===
 #speaker: Mother #portrait:Happymother
 Alright, give us two of these beauties – Auntie Leela will not settle for less, you know!
+~addGroceries(getGROCERIES_FISH())
 -> leela_leave
 
 ===leela_leave===

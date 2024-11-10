@@ -1,4 +1,5 @@
-EXTERNAL addTaskDone(string)
+EXTERNAL addGroceries(string)
+EXTERNAL getGROCERIES_CABBAGE()
 -> start_dialogue
 
 ===start_dialogue===
@@ -6,7 +7,7 @@ EXTERNAL addTaskDone(string)
 (should I get cabbages?)
 *[yes]
 Halim ah! Can I get some cabbages, please? Fresh ones, ah! Thank you!
-~addTaskDone("Buy a cabbage")
+~addGroceries(getGROCERIES_CABBAGE())
 zzz
 -> END
 *[no]

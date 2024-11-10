@@ -1135,8 +1135,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 2119796966}
-  inkJSON: {fileID: 4900000, guid: d89a5455c786d2b4884f4bcccddf2988, type: 3}
+  day1Json: {fileID: 0}
+  day2Json: {fileID: 0}
+  day3Json: {fileID: 0}
+  day4Json: {fileID: 0}
 --- !u!1 &648780059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1032691577790199254, guid: 58014fd8f23530b4b8a94324b284cc7f, type: 3}
@@ -1386,10 +1388,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28b6dd02e066c8548bfd51566e220b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  day1Json: {fileID: 0}
+  day1Json: {fileID: 4900000, guid: 8f8bbc72777113a46890a90d16505034, type: 3}
   day2Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
-  day3Json: {fileID: 0}
-  day4Json: {fileID: 0}
+  day3Json: {fileID: 4900000, guid: 4cbb065d96037d74a893571d3bd821f0, type: 3}
+  day4Json: {fileID: 4900000, guid: e4e1733e77a0d304bad61ff6778791fc, type: 3}
 --- !u!1 &868026201
 GameObject:
   m_ObjectHideFlags: 0

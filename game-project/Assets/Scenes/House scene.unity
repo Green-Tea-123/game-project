@@ -5147,7 +5147,7 @@ PrefabInstance:
     - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
       propertyPath: day1Json
       value: 
-      objectReference: {fileID: 4900000, guid: 67e832ede9caf0542908c7dc8f446fd9, type: 3}
+      objectReference: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
     - target: {fileID: 5588138709105034537, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
       propertyPath: day2Json
       value: 

@@ -1,8 +1,11 @@
+EXTERNAL addGroceries(string)
+EXTERNAL getGROCERIES_CHICKEN()
 -> start_dialogue
 
 ===start_dialogue===
 #speaker: Uncle Fong #portrait:Unclefong
 Ah Mui ! Lai lai!
+~addGroceries(getGROCERIES_CHICKEN())
 #speaker: Mother #portrait:Happymother
 Oh Uncle Tan! Why What Happen?
 #speaker: Uncle Fong #portrait:Unclefong

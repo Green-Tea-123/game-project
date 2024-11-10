@@ -1,3 +1,4 @@
+EXTERNAL incrementDementiaCounter()
 -> start_dialogue
 
 ===start_dialogue===
@@ -33,5 +34,7 @@ Alright, that's better, now I'm all set for the day!
 ===wrong_choice===
 #speaker: Mother #portrait:Happymother
 Hmm… Wah it seems like it, but also not leh
+~incrementDementiaCounter()
 Just guess lor
+
 -> END

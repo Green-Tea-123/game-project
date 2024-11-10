@@ -1,3 +1,5 @@
+EXTERNAL addGroceries(string)
+EXTERNAL getGROCERIES_GINGER()
 -> start_dialogue
 
 ===start_dialogue===
@@ -22,7 +24,7 @@ Fresh from the supplier this morning – only the best quality, auntie
 ===correct_choice===
 #speaker: Mother #portrait:Happymother
 Mr. Lim, these are fresh, right? I'll get some then
-
+~addGroceries(getGROCERIES_GINGER())
 #speaker: Mr Lim #portrait:Mrlim
 Alright, some strong and firm giner for you
 Won't find any better around here!

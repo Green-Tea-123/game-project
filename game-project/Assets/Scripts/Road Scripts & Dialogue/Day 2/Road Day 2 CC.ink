@@ -1,9 +1,13 @@
+EXTERNAL addTaskDone(task)
+EXTERNAL getMAHJONG()
+
 -> start_dialogue
 
 ===start_dialogue===
 #speaker: Mother #portrait:Happymother
 That’s right! Siew Fong’s house is under renovation, so we’re meeting at the CC today.
 Good thing I remembered before wandering off somewhere else. Let’s go – my lucky day awaits
+~addTaskDone(getMAHJONG())
 #speaker: Auntiesiewfong #portrait:Auntiesiewfong
 Eh, late today, ah, Ah Mui! Forgot where my house is, ah? AHAH!
 #speaker: Mother #portrait:Happymother

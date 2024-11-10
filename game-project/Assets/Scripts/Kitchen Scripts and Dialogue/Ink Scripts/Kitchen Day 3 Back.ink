@@ -1,3 +1,4 @@
+EXTERNAL incrementDementiaCounter()
 -> start_dialogue
 
 ===start_dialogue===
@@ -14,6 +15,7 @@ Eh? What was I supposed to cook today ah?
 ===wrong_choice===
 #speaker: Mother #portrait:Happymother
 Fish head curry, right? Alright, let’s get started then!
+~incrementDementiaCounter()
 Eh… wait, I was supposed to make ikan goreng, aiyah!
 Actually… it’s alright, lah, I’ll just eat fish head curry today
 Got to enjoy life’s surprises sometimes, right?

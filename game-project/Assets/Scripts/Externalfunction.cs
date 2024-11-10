@@ -70,6 +70,20 @@ public class Externalfunction
         story.BindExternalFunction("addTaskDone", (string task) => {
             MainManager.instance.addTaskDone(task);
         });
+        story.BindExternalFunction("addGroceries",(string task) => {
+            MainManager.instance.addGroceries(task);
+        });
+        story.BindExternalFunction("addMorningMeds",(string task) => {
+            MainManager.instance.addMorningMeds(task);
+        });
+        story.BindExternalFunction("addEveningMeds",(string task) => {
+            MainManager.instance.addMorningMeds(task);
+        });
+
+        story.BindExternalFunction("incrementDementiaCounter",() => {
+            MainManager.instance.incrementDementiaCounter();
+        });
+
 
     }
 
@@ -96,6 +110,10 @@ public class Externalfunction
         story.UnbindExternalFunction("getGROCERIES_WATERMELON");
         story.UnbindExternalFunction("getGROCERIES_PORK");
         story.UnbindExternalFunction("addTaskDone");
+        story.UnbindExternalFunction("addGroceries");
+        story.UnbindExternalFunction("addMorningMeds");
+        story.UnbindExternalFunction("addEveningMeds");
+        story.UnbindExternalFunction("incrementDementiaCounter");
 
 
     }

@@ -1,3 +1,4 @@
+EXTERNAL incrementDementiaCounter()
 -> start_dialogue
 
 ===start_dialogue===
@@ -18,6 +19,7 @@ I need to faster take my medicine
 -> END
 ===wrong_choice===
 Is it Thursday? I don't know leh
+~incrementDementiaCounter()
 I cannot remember what pills to take leh
 Just guess ah?
 -> END
