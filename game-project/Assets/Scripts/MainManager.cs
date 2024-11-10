@@ -178,10 +178,7 @@ public class MainManager : MonoBehaviour
     public void addTaskDone(string task)
     {
         this.tasksDone.Add(task);
-        foreach (var valus in this.tasksDone)
-        {
-            Console.WriteLine(valus);
-        }
+        Debug.LogWarning("addtask triggered:"+task);
     }
 
     public void checkTasks()
