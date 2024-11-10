@@ -72,7 +72,7 @@ public class InputManager : MonoBehaviour
       _moveaction = _playerinput.actions["Move"];
       _interaction = _playerinput.actions["interact"];
       _submission  = _playerinput.actions["submit"];
-      pm = FindObjectOfType<PlayerMovement>(); 
+      pm = FindObjectOfType<PlayerMovement>();
     }
 
     void Update()
@@ -83,11 +83,15 @@ public class InputManager : MonoBehaviour
         if (DialogueManager.GetInstance().dialogueIsPlaying)
         {
             pm.canmove = false;
+            
         }
         else
         {
             pm.canmove = true;
+         
         }
+        
+
     }
 
      public bool GetSubmitPressed() 
