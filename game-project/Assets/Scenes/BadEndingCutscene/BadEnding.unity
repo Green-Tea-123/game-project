@@ -1519,7 +1519,7 @@ Transform:
   m_GameObject: {fileID: 840171678}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.9778275, y: 3.8751314, z: 0.0056641493}
+  m_LocalPosition: {x: 8, y: 3.85, z: 0.0056641493}
   m_LocalScale: {x: 0.46012187, y: 0.45000935, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1641,8 +1641,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942117493}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.5, y: -1.59, z: -0.0056641493}
+  m_LocalRotation: {x: 0.008726637, y: -0, z: -0, w: -0.9999619}
+  m_LocalPosition: {x: -3.9853573, y: 2.6904085, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2106,7 +2106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.045742035}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2770,11 +2770,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.56
+      value: -15.9
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.69
+      value: -1.6
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.z
