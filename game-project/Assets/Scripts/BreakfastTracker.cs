@@ -11,7 +11,7 @@ public class BreakfastTracker : MonoBehaviour
         hasEatenBreakfast = false;
     }
 
-    void eatBreakfast() {
+    public static void eatBreakfast() {
         hasEatenBreakfast = true;
     }
 }

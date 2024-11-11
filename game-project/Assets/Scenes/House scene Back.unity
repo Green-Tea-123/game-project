@@ -900,7 +900,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -1232,9 +1232,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visualCue: {fileID: 421815585}
+  m_Name:
+  m_EditorClassIdentifier:
+  visualCue: {fileID: 1152782289}
   day1Json: {fileID: 4900000, guid: 94db593c08e389e4083d622c71065a9b, type: 3}
   day2Json: {fileID: 4900000, guid: 94db593c08e389e4083d622c71065a9b, type: 3}
   day3Json: {fileID: 4900000, guid: 94db593c08e389e4083d622c71065a9b, type: 3}
@@ -1294,8 +1294,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5428efa9d42504b99c90dc6b4d5adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   highlightOverlay: {fileID: 1152782289}
 --- !u!212 &421815590
 SpriteRenderer:
@@ -1646,8 +1646,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5428efa9d42504b99c90dc6b4d5adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   highlightOverlay: {fileID: 393082138}
 --- !u!114 &595379707
 MonoBehaviour:
@@ -1659,9 +1659,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visualCue: {fileID: 595379704}
+  m_Name:
+  m_EditorClassIdentifier:
+  visualCue: {fileID: 393082138}
   day1Json: {fileID: 4900000, guid: 05f0c60585714af4a9d2ac256c7005e7, type: 3}
   day2Json: {fileID: 4900000, guid: 05f0c60585714af4a9d2ac256c7005e7, type: 3}
   day3Json: {fileID: 4900000, guid: 05f0c60585714af4a9d2ac256c7005e7, type: 3}
@@ -2180,9 +2180,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visualCue: {fileID: 761511887}
+  m_Name:
+  m_EditorClassIdentifier:
+  visualCue: {fileID: 399821359}
   day1Json: {fileID: 4900000, guid: 6a47f115596456644b8dfc0084c1ab73, type: 3}
   day2Json: {fileID: 4900000, guid: 6a47f115596456644b8dfc0084c1ab73, type: 3}
   day3Json: {fileID: 4900000, guid: 6a47f115596456644b8dfc0084c1ab73, type: 3}
@@ -2242,8 +2242,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5428efa9d42504b99c90dc6b4d5adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   highlightOverlay: {fileID: 399821359}
 --- !u!212 &761511892
 SpriteRenderer:
@@ -2528,7 +2528,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
@@ -2793,8 +2793,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   nextSceneName: Bedroom Back
 --- !u!1 &902923122
 GameObject:
@@ -5950,9 +5950,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visualCue: {fileID: 1690683973}
+  m_Name:
+  m_EditorClassIdentifier:
+  visualCue: {fileID: 477636322}
   day1Json: {fileID: 4900000, guid: 87c5d9bc3f3754944b345171ea0b1dd6, type: 3}
   day2Json: {fileID: 4900000, guid: 87c5d9bc3f3754944b345171ea0b1dd6, type: 3}
   day3Json: {fileID: 4900000, guid: 87c5d9bc3f3754944b345171ea0b1dd6, type: 3}
@@ -6012,8 +6012,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5428efa9d42504b99c90dc6b4d5adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   highlightOverlay: {fileID: 477636322}
 --- !u!212 &1690683978
 SpriteRenderer:
@@ -6718,8 +6718,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   visualCue: {fileID: 259457261}
   day1Json: {fileID: 4900000, guid: c27a06c29647d164b91a98e1858c85f2, type: 3}
   day2Json: {fileID: 4900000, guid: b038ed58f2496ca4cac4e14316f69da8, type: 3}
@@ -6813,8 +6813,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   visualCue: {fileID: 1290242170}
   day1Json: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
   day2Json: {fileID: 4900000, guid: bd94b46111e71454c923e5b7761b7bcf, type: 3}
@@ -7292,3 +7292,4 @@ SceneRoots:
   - {fileID: 1175132038}
   - {fileID: 779426884}
   - {fileID: 296535579}
+  - {fileID: 400004572562628962}
