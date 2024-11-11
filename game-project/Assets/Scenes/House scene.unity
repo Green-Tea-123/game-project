@@ -6098,6 +6098,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1818123278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1818123280}
+  - component: {fileID: 1818123279}
+  m_Layer: 0
+  m_Name: BreakfastTracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1818123279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818123278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404ba833388951446a4aacea0bdc90fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1818123280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818123278}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05579254, y: -0.08858332, z: 35433.305}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1860174493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,8 +6386,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2041849399}
   - component: {fileID: 2041849402}
-  - component: {fileID: 2041849401}
   - component: {fileID: 2041849400}
+  - component: {fileID: 2041849403}
   m_Layer: 0
   m_Name: Collider_Bottom_ToRoad
   m_TagString: Untagged
@@ -6411,19 +6455,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &2041849401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041849398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e6989dbd6e77214faf25eada17558e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextSceneName: Road
 --- !u!212 &2041849402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6476,6 +6507,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2041849403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041849398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439294ca26d807a4c9b61435afdc4a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: Road
+  textJson: {fileID: 4900000, guid: 7f395d56a83fdab4ab48b241549d98fc, type: 3}
 --- !u!1 &2071905757
 GameObject:
   m_ObjectHideFlags: 0
@@ -6654,7 +6699,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9677954704600347, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
       propertyPath: m_SortingOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2293436649619784490, guid: 3c29d37f1050f7b4095f52727b573f57, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6792,3 +6837,4 @@ SceneRoots:
   - {fileID: 1175132038}
   - {fileID: 1722957475}
   - {fileID: 1028655002}
+  - {fileID: 1818123280}
