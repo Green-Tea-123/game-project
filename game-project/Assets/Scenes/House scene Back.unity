@@ -4815,11 +4815,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.45
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.59
+      value: -3.79
       objectReference: {fileID: 0}
     - target: {fileID: 3190766463087053732, guid: cc52e7c39030ec6458e6721972f15199, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5076,6 +5076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  visualCue: {fileID: 0}
   day1Json: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
   day2Json: {fileID: 4900000, guid: bd94b46111e71454c923e5b7761b7bcf, type: 3}
   day3Json: {fileID: 4900000, guid: 426360eb892b30849932c8d506a88b12, type: 3}
