@@ -2159,19 +2159,33 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 10, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 40
     m_Data: {fileID: 11400000, guid: 9ffbb42784f992341a0fa90ad33712aa, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 1727240f0cefd97458a8463b92b13b76, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 42072c3edc805c9489dd54a26354b885, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 40
     m_Data: {fileID: -1162010346, guid: 341ff5378024b1f4d8bdfa5112693873, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 1078983863, guid: 4aa78b267bd3ca849a25aebf56b5bda6, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -2099720648, guid: 9b287ba47f85a0a4c8a469a02523a4f0, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 56
+  - m_RefCount: 57
     m_Data:
       e00: 1
       e01: 0
@@ -2190,7 +2204,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 56
+  - m_RefCount: 57
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -4462,7 +4476,7 @@ Transform:
   m_GameObject: {fileID: 1093544733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.7240677, y: 4.522645, z: 0.04384654}
+  m_LocalPosition: {x: -4.7240677, y: 4, z: 0.04384654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4508,7 +4522,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 4
   m_Sprite: {fileID: -6648785302142086838, guid: 106dc2a4656ddf74eb2dde2d94ccb8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8944,7 +8958,7 @@ Transform:
   m_GameObject: {fileID: 1733276826}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.096888, y: 4.462645, z: 0.04384654}
+  m_LocalPosition: {x: 8.096888, y: 3.84, z: 0.04384654}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8990,7 +9004,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 4
   m_Sprite: {fileID: 1115249104270172192, guid: 106dc2a4656ddf74eb2dde2d94ccb8da, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
