@@ -1040,10 +1040,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1030844914}
-  day1Json: {fileID: 4900000, guid: 1953bd880e9f0af44aadc27a1d44e14f, type: 3}
+  day1Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
   day2Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
-  day3Json: {fileID: 4900000, guid: 1953bd880e9f0af44aadc27a1d44e14f, type: 3}
-  day4Json: {fileID: 4900000, guid: 1953bd880e9f0af44aadc27a1d44e14f, type: 3}
+  day3Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
+  day4Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
 --- !u!1 &648780059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1032691577790199254, guid: 58014fd8f23530b4b8a94324b284cc7f, type: 3}

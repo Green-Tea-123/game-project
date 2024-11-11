@@ -1,0 +1,1 @@
+﻿{"inkVersion":21,"root":[[{"->":"start_dialogue"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"start_dialogue":["#","^speaker: Mother ","/#","#","^portrait:Happymother","/#","^(the clinic is not opened yet, do i come back later?)","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}
