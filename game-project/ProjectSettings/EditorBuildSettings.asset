@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BadEndingCutscene/BadEnding.unity
     guid: e328819bd08070a4c9d53f0a52ae6c3a
+  - enabled: 1
+    path: Assets/Scenes/Mahjong cutscene.unity
+    guid: 56e702b8855680f42b8796cc381cbbb5
+  - enabled: 1
+    path: Assets/Scenes/Taichi cutscene.unity
+    guid: e8b15462a5454fd4d8dc23266a7324e8
   m_configObjects: {}
