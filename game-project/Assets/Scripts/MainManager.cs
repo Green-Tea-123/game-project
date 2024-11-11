@@ -50,6 +50,9 @@ public class MainManager : MonoBehaviour
     public static readonly string GROCERIES_WATERMELON = "Buy some watermelon";
     public static readonly string GROCERIES_PORK = "Buy some pork";
 
+    // for cc activities
+    public bool hasVisitedCC;
+
     private void Awake()
     {
         if (instance != null)
@@ -112,6 +115,8 @@ public class MainManager : MonoBehaviour
         this.morningMeds.Add(MEDICINE_GREEN);
         this.morningMeds.Add(MEDICINE_PINK);
         this.eveningMeds.Add(MEDICINE_BLUE);
+
+        this.hasVisitedCC = false;
     }
 
     public void getDay2List()
@@ -132,6 +137,8 @@ public class MainManager : MonoBehaviour
         this.morningMeds.Add(MEDICINE_GREEN);
         this.eveningMeds.Add(MEDICINE_BLUE);
         this.eveningMeds.Add(MEDICINE_YELLOW);
+
+        this.hasVisitedCC = false;
     }
 
     public void getDay3List()
@@ -152,6 +159,8 @@ public class MainManager : MonoBehaviour
         this.morningMeds.Add(MEDICINE_GREEN);
         this.morningMeds.Add(MEDICINE_PINK);
         this.eveningMeds.Add(MEDICINE_BLUE);
+
+        this.hasVisitedCC = false;
     }
 
     public void getDay4List()
@@ -173,6 +182,8 @@ public class MainManager : MonoBehaviour
         this.morningMeds.Add(MEDICINE_GREEN);
         this.eveningMeds.Add(MEDICINE_BLUE);
         this.eveningMeds.Add(MEDICINE_YELLOW);
+
+        this.hasVisitedCC = false;
     }
 
     public void addTaskDone(string task)

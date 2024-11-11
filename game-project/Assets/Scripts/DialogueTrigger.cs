@@ -5,25 +5,25 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Visual Cue")]
-    [SerializeField] private GameObject visualCue;
+    [SerializeField] protected GameObject visualCue;
 
     [Header("Ink JSON")]
 
     [Header("Day 1 Ink")]
-    [SerializeField] private TextAsset day1Json;
+    [SerializeField] protected TextAsset day1Json;
 
     [Header("Day 2 Ink")]
-    [SerializeField] private TextAsset day2Json;
+    [SerializeField] protected TextAsset day2Json;
 
     [Header("Day 3 Ink")]
-    [SerializeField] private TextAsset day3Json;
+    [SerializeField] protected TextAsset day3Json;
 
     [Header("Day 4 Ink")]
-    [SerializeField] private TextAsset day4Json;
+    [SerializeField] protected TextAsset day4Json;
 
-    private bool playerInRange;
+    protected bool playerInRange;
 
-    private bool interacteditem = false;
+    protected bool interacteditem = false;
 
     private void Awake() 
     {
