@@ -1,0 +1,1 @@
+﻿{"inkVersion":21,"root":[[{"->":"start_dialogue"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"start_dialogue":["#","^speaker: Mother ","/#","#","^portrait:Happymother","/#","^I don't need to collect any medication today, where should I go?","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}

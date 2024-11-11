@@ -1,1 +1,1 @@
-﻿{"inkVersion":21,"root":[[{"->":"start_dialogue"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"start_dialogue":["^I have my Tai Chi class today","\n","^That’s at the community centre, better not be late","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}
+﻿{"inkVersion":21,"root":[[{"->":"start_dialogue"},["done",{"#f":5,"#n":"g-0"}],null],"done",{"start_dialogue":["#","^speaker: Mother ","/#","#","^portrait:Happymother","/#","^I have my Tai Chi class today","\n","^That’s at the community centre, better not be late","\n","end",{"#f":1}],"#f":1}],"listDefs":{}}
