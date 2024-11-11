@@ -864,7 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 209454511}
+  visualCue: {fileID: 2071905757}
   day1Json: {fileID: 4900000, guid: 6bc90eb838c4e4642ac5194d45d5eb25, type: 3}
   day2Json: {fileID: 4900000, guid: 6bc90eb838c4e4642ac5194d45d5eb25, type: 3}
   day3Json: {fileID: 4900000, guid: 6bc90eb838c4e4642ac5194d45d5eb25, type: 3}
@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 618793528}
+  visualCue: {fileID: 1350524050}
   day1Json: {fileID: 4900000, guid: a16d53a593eedc94692a3327ecc7bb24, type: 3}
   day2Json: {fileID: 4900000, guid: a16d53a593eedc94692a3327ecc7bb24, type: 3}
   day3Json: {fileID: 4900000, guid: a16d53a593eedc94692a3327ecc7bb24, type: 3}
@@ -1649,7 +1649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 678352775}
+  visualCue: {fileID: 1128777303}
   day1Json: {fileID: 4900000, guid: f2b3de53a49a06e44a90ec412dd09c53, type: 3}
   day2Json: {fileID: 4900000, guid: f2b3de53a49a06e44a90ec412dd09c53, type: 3}
   day3Json: {fileID: 4900000, guid: f2b3de53a49a06e44a90ec412dd09c53, type: 3}
@@ -6385,7 +6385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf30c35f8fcbe8046bcb7955bde806b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visualCue: {fileID: 1749017603}
+  visualCue: {fileID: 75683286}
   day1Json: {fileID: 4900000, guid: 5605e91d6de8672418c347734b32d948, type: 3}
   day2Json: {fileID: 4900000, guid: 5605e91d6de8672418c347734b32d948, type: 3}
   day3Json: {fileID: 4900000, guid: 5605e91d6de8672418c347734b32d948, type: 3}
