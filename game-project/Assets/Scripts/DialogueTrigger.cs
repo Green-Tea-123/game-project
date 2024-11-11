@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Visual Cue")]
-    //[SerializeField] private GameObject visualCue;
+    [SerializeField] private GameObject visualCue;
 
     [Header("Ink JSON")]
 
@@ -36,7 +36,7 @@ public class DialogueTrigger : MonoBehaviour
         int day = MainManager.instance.getDay();
         if (playerInRange && !DialogueManager.GetInstance().dialogueIsPlaying && !interacteditem) 
         {
-            //visualCue.SetActive(true);
+            visualCue.SetActive(true);
             if (InputManager.GetInstance().GetInteractPressed()) 
             {
                 interacteditem = true;
@@ -69,7 +69,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         else 
         {
-            //visualCue.SetActive(false);
+            visualCue.SetActive(false);
         }
     }
 
