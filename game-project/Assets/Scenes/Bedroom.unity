@@ -375,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78d73a7a5d46e44db408340b24dcf97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasVisitedCC: 0
 --- !u!1 &348137390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,11 +3703,11 @@ PrefabInstance:
       objectReference: {fileID: 439738523}
     - target: {fileID: 228382951846773518, guid: 7c3ebbe8b119c7847901b84de2661449, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -457
+      value: -246
       objectReference: {fileID: 0}
     - target: {fileID: 228382951846773518, guid: 7c3ebbe8b119c7847901b84de2661449, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 210.5
+      value: 110.8
       objectReference: {fileID: 0}
     - target: {fileID: 448065460631591604, guid: 7c3ebbe8b119c7847901b84de2661449, type: 3}
       propertyPath: m_SizeDelta.x
