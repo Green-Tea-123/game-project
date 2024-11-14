@@ -6766,7 +6766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1474820039}
-  day1Json: {fileID: 0}
+  day1Json: {fileID: 4900000, guid: 7b2532ef5216b284d9264cb833a382a9, type: 3}
   day2Json: {fileID: 0}
   day3Json: {fileID: 0}
   day4Json: {fileID: 0}
