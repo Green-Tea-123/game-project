@@ -10,7 +10,7 @@ public class ChangeSceneBadEnding : ChangeSceneOnCollision {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Player")) {
-            if (MainManager.instance.getDay() == 4) { // MainManager.instance.getDementiaCounter() >= threshold
+            if (MainManager.instance.getDay() == 2) { // MainManager.instance.getDementiaCounter() >= threshold
                 if (MainManager.instance.getDementiaCounter() >= threshold)
                 { 
                     SceneManager.LoadScene(badSceneName); 

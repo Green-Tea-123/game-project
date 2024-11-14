@@ -691,7 +691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &414747822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1390,6 +1390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1070006712}
   - component: {fileID: 1070006713}
+  - component: {fileID: 1070006714}
   m_Layer: 0
   m_Name: BedroomInit
   m_TagString: Untagged
@@ -1428,6 +1429,19 @@ MonoBehaviour:
   day2Json: {fileID: 4900000, guid: c8c9fdbcddccc184dbae577a54b7d91e, type: 3}
   day3Json: {fileID: 4900000, guid: c3cd45cd6f602f643bf369768614f987, type: 3}
   day4Json: {fileID: 4900000, guid: 534c057bd8d3f56478ad529a167e5f55, type: 3}
+--- !u!114 &1070006714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070006711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c465535ab585634aaf04dd3b5add5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postit: {fileID: 1283684391}
 --- !u!1 &1130389730
 GameObject:
   m_ObjectHideFlags: 0
