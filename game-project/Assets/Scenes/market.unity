@@ -5741,7 +5741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneName: Road Back
-  badSceneName: 
+  badSceneName: BadEnding
   goodSceneName: BadEnding
   threshold: 10
 --- !u!1 &1217363319
