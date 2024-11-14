@@ -1,8 +1,10 @@
-EXTERNAL caliingnotes(a)
+EXTERNAL notesappear()
+EXTERNAL notesdisappear()
 
 
 #speaker: Mother #portrait:Happymother
 Let me look at what I need to do 
-~caliingnotes("/dialogue manager/Canvas/Note")
+~notesappear()
 Day 1 is ....
+~notesdisappear()
 Oh okay.
