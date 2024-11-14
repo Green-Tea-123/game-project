@@ -252,6 +252,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.4}
   m_EdgeRadius: 0
+--- !u!1 &30307224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 30307226}
+  - component: {fileID: 30307225}
+  m_Layer: 0
+  m_Name: LivingRoomInni
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &30307225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30307224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e2dcc8185009345b39cd561216e0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  son: {fileID: 363564873}
+--- !u!4 &30307226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30307224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.602197, y: 0.44366044, z: -9.950129}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56807410
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +993,7 @@ Transform:
   m_GameObject: {fileID: 363564873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.96, y: -0.22, z: 0}
+  m_LocalPosition: {x: 6.04, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7139,10 +7184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1290242170}
-  day1Json: {fileID: 4900000, guid: f0fc61e7430a2514f9124dd68b22dd5c, type: 3}
-  day2Json: {fileID: 4900000, guid: bd94b46111e71454c923e5b7761b7bcf, type: 3}
-  day3Json: {fileID: 4900000, guid: 426360eb892b30849932c8d506a88b12, type: 3}
-  day4Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
+  day1Json: {fileID: 0}
+  day2Json: {fileID: 0}
+  day3Json: {fileID: 0}
+  day4Json: {fileID: 4900000, guid: ad9e3417294d6d842a0bec0332358528, type: 3}
 --- !u!1 &1973805520
 GameObject:
   m_ObjectHideFlags: 0
@@ -7466,8 +7511,7 @@ Transform:
   m_LocalPosition: {x: 1.21, y: -5.8398, z: 0.056037255}
   m_LocalScale: {x: 3.0137646, y: 0.7189644, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 620714283}
+  m_Children: []
   m_Father: {fileID: 1860174494}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2041849400
@@ -7840,3 +7884,4 @@ SceneRoots:
   - {fileID: 1218960524}
   - {fileID: 173405700}
   - {fileID: 1639079121}
+  - {fileID: 30307226}

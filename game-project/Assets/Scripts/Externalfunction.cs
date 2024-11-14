@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Externalfunction
 {
@@ -115,11 +117,16 @@ public class Externalfunction
                 Debug.LogWarning("note");
             }
         });
-    
+
+        story.BindExternalFunction("goodendingscene", (string endingz) =>
+        {
+            SceneManager.LoadScene(endingz);
+        });
 
 
 
-    }
+
+        }
 
     public void unbind(Story story)
     {

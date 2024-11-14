@@ -1,3 +1,4 @@
+EXTERNAL goodendingscene(a)
 -> start_dialogue
 
 ===start_dialogue===
@@ -19,4 +20,5 @@ Ma … this curry tastes a bit funny. Did you do something different?
 #speaker: Mother #portrait:Sadmother
 Oh… does it? I… I must’ve forgotten something
 Excuse me… I… I’ll be right back
+
 -> END
