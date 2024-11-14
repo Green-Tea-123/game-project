@@ -1,6 +1,32 @@
 -> start_dialogue
 
 ===start_dialogue===
+#speaker: Son #portrait:HappySon
+Morning, Ma. Got kaya toast and kopi—no sugar, okay? Doctor’s orders
+I need to run, boss wants me at the shop early
+Your schedule for the week is on the kitchen board ah
+Just remember Tai Chi with Auntie Siew Fong today and mahjong at the Community Centre tomorrow, okay?
+
+#speaker: Mother #portrait:Happymother
+Ah Boon, so busy but still making breakfast for me! Like I got my own butler now, ah?
+
+#speaker: Son #portrait:HappySon
+Yah, yah, butler duty, just don’t forget your medication, Ma
+It’s all set up — different colors each day. Check the labels, ah?
+
+#speaker: Mother #portrait:Happymother
+Aiyah, I know lah, don’t nag, this brain still got some power!
+
+#speaker: Son #portrait:HappySon
+Alright, Ma. Oh—and don’t go betting away your kopi money at mahjong!
+And Friday, family dinner, curry must be ‘family-friendly,’ not too spicy, okay?
+
+#speaker: Mother #portrait:Happymother
+Curry with no kick is just water! But okay lah, I go easy
+
+#speaker: Son #portrait:HappySon
+Love you, Ma! See you Friday. Got to go!
+
 #speaker: Mother #portrait:Happymother
 Yum wow thanks for the meal
 See you boy, take care okay! Love you

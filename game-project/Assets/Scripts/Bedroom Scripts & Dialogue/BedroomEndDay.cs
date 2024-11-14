@@ -29,6 +29,7 @@ public class BedroomEndDay : MonoBehaviour
     private void handleEndOfDayLogic() {
         MainManager.instance.checkTasks();
         MainManager.instance.incrementDay();
+        MainManager.instance.incrementDementiaCounter();
     }
 
     private void handleEndOfDayDialogue() {

@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Ink.Runtime;
+using UnityEditor.Experimental.GraphView;
 
 public class Externalfunction
 {
     public void bind(Story story)
     {
-       story.BindExternalFunction("getBreakfast", () => {
+        story.BindExternalFunction("getBreakfast", () => {
             return MainManager.BREAKFAST;
         });
         story.BindExternalFunction("getMEDICINE_PINK", () => {
@@ -15,10 +16,10 @@ public class Externalfunction
         });
         story.BindExternalFunction("getMEDICINE_BLUE", () => {
             return MainManager.MEDICINE_BLUE;
-        }); 
+        });
         story.BindExternalFunction("MEDICINE_GREEN", () => {
             return MainManager.MEDICINE_GREEN;
-        }); 
+        });
         story.BindExternalFunction("getMEDICINE_YELLOW", () => {
             return MainManager.MEDICINE_YELLOW;
         });
@@ -70,29 +71,52 @@ public class Externalfunction
         story.BindExternalFunction("addTaskDone", (string task) => {
             MainManager.instance.addTaskDone(task);
         });
-        story.BindExternalFunction("addGroceries",(string task) => {
+        story.BindExternalFunction("addGroceries", (string task) => {
             MainManager.instance.addGroceries(task);
         });
-        story.BindExternalFunction("addMorningMeds",(string task) => {
+        story.BindExternalFunction("addMorningMeds", (string task) => {
             MainManager.instance.addMorningMeds(task);
         });
-        story.BindExternalFunction("addEveningMeds",(string task) => {
+        story.BindExternalFunction("addEveningMeds", (string task) => {
             MainManager.instance.addMorningMeds(task);
         });
 
-        story.BindExternalFunction("incrementDementiaCounter",() => {
+        story.BindExternalFunction("incrementDementiaCounter", () => {
             MainManager.instance.incrementDementiaCounter();
         });
 
-        story.BindExternalFunction("colomnappear",() => {
-            GameObject box = GameObject.Find("/dialogue manager/Canvas/Note");
+        story.BindExternalFunction("colomnappear", (string filePath) => {
+            GameObject box = GameObject.Find(filePath);
             box.SetActive(true);
         });
 
-        story.BindExternalFunction("colomndisappear",() => {
-            GameObject box = GameObject.Find("/dialogue manager/Canvas/Note");
+        story.BindExternalFunction("colomndisappear", (string filePath) => {
+            GameObject box = GameObject.Find(filePath);
             box.SetActive(false);
         });
+
+        story.BindExternalFunction("notesappear", () => {
+            DialogueManager.GetInstance().showNote();
+        });
+
+        story.BindExternalFunction("notesdisappear", () => {
+            DialogueManager.GetInstance().hideNote();
+        });
+
+        story.BindExternalFunction("caliingnotes", (string filePath) =>
+        {
+            GameObject note = DialogueManager.GetInstance().getChildObject(filePath);
+            if (note != null)
+            {
+                note.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("note");
+            }
+        });
+    
+
 
 
     }
