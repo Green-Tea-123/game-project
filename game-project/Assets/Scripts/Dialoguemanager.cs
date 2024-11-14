@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI displayNameText;
     [SerializeField] private Animator portraitAnimator;
+    [SerializeField] private GameObject Notes;
     private Animator layoutAnimator;
 
     [Header("Choices UI")]
@@ -225,8 +226,26 @@ public class DialogueManager : MonoBehaviour
         InputManager.GetInstance().RegisterSubmitPressed(); // this is specific to my InputManager script*/
         currentStory.ChooseChoiceIndex(choiceIndex);
         ContinueStory();
-  
+    }
 
+    public void showNote()
+    {
+        this.Notes.SetActive(true);
+    }
+    public void hideNote()
+    {
+        this.Notes.SetActive(false);
+    }
+
+    public GameObject getChildObject(string path)
+    {
+        Transform child = transform.Find(path);
+        if (child != null)
+        {
+            return child.gameObject;
+        }
+        Debug.LogWarning("Path not found: " + path);
+        return null;
     }
 
 }
