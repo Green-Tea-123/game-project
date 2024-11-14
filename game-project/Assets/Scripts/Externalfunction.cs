@@ -84,6 +84,16 @@ public class Externalfunction
             MainManager.instance.incrementDementiaCounter();
         });
 
+        story.BindExternalFunction("colomnappear",() => {
+            GameObject box = GameObject.Find("/dialogue manager/Canvas/Note");
+            box.SetActive(true);
+        });
+
+        story.BindExternalFunction("colomndisappear",() => {
+            GameObject box = GameObject.Find("/dialogue manager/Canvas/Note");
+            box.SetActive(false);
+        });
+
 
     }
 
@@ -114,6 +124,8 @@ public class Externalfunction
         story.UnbindExternalFunction("addMorningMeds");
         story.UnbindExternalFunction("addEveningMeds");
         story.UnbindExternalFunction("incrementDementiaCounter");
+        story.UnbindExternalFunction("colomnappear");
+        story.UnbindExternalFunction("colomndisappear");
 
 
     }

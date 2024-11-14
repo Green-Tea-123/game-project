@@ -1,14 +1,10 @@
-EXTERNAL addGroceries(text)
-EXTERNAL getGROCERIES_CABBAGE()
-hiiiii #speaker: Son #portrait:Happyson
-yooooooooozzs
-zasfasd
-zafasdsafg
-this is a test  #speaker: Son #portrait:Happyson
-*[aasd]
-    ~addGroceries(getGROCERIES_CABBAGE())
-    ~addGroceries("Buy a chicken")
-    ~addGroceries("Buy a potato")
-    hi
-*[zzsa]
-    zsaf
+EXTERNAL colomnappear()
+EXTERNAL colomndisappear()
+#speaker: Mother #portrait:Happymother
+Let me see whats on it 
+~colomnappear()
+first is ....
+2nd is...
+~colomndisappear()
+Ohh the notes is blown away
+Cry
