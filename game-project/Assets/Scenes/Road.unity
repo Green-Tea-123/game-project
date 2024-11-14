@@ -446,6 +446,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &224061970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224061972}
+  - component: {fileID: 224061971}
+  m_Layer: 0
+  m_Name: RoadDialogueTriggerAfterCC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &224061971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224061970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad43061e367ee3e4ea88f307732e7f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  day1Json: {fileID: 4900000, guid: 67e832ede9caf0542908c7dc8f446fd9, type: 3}
+  day2Json: {fileID: 4900000, guid: fa3f18330953dd04785e9ca7bf2dffda, type: 3}
+--- !u!4 &224061972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224061970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9141718, y: 0.4256279, z: 24038.516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246460211
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,3 +3669,4 @@ SceneRoots:
   - {fileID: 647855904}
   - {fileID: 1724155898}
   - {fileID: 134331880}
+  - {fileID: 224061972}

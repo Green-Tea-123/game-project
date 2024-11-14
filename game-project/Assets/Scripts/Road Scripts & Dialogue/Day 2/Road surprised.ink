@@ -11,4 +11,5 @@ Okay collected.
 ~addTaskDone(getCLINIC())
 Eh I should get some groceries to eat too? Not sure what to cook today. 
 I am abit tired…………
+Haiyah, just get some chicken at the market lah then go back
 ->END
