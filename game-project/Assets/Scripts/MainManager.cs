@@ -107,7 +107,7 @@ public class MainManager : MonoBehaviour
         this.eveningMedsTaken = new HashSet<string>();
         this.groceriesBought = new HashSet<string>();
 
-        this.tasks.Add(BREAKFAST);
+
         this.tasks.Add(TAICHI);
         this.groceries.Add(GROCERIES_CABBAGE);
         this.groceries.Add(GROCERIES_POTATO);
@@ -153,7 +153,7 @@ public class MainManager : MonoBehaviour
         this.eveningMedsTaken = new HashSet<string>();
         this.groceriesBought = new HashSet<string>();
 
-        this.tasks.Add(BREAKFAST);
+    
         this.groceries.Add(GROCERIES_FISH);
         this.groceries.Add(GROCERIES_GINGER);
         this.morningMeds.Add(MEDICINE_GREEN);
@@ -175,7 +175,7 @@ public class MainManager : MonoBehaviour
         this.eveningMedsTaken = new HashSet<string>();
         this.groceriesBought = new HashSet<string>();
 
-        this.tasks.Add(BREAKFAST);
+
         this.groceries.Add(GROCERIES_CARDAMOM);
         this.groceries.Add(GROCERIES_BEEF);
         this.groceries.Add(GROCERIES_CARROT);
