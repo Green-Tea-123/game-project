@@ -7692,6 +7692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: Road
   textJson: {fileID: 4900000, guid: 7f395d56a83fdab4ab48b241549d98fc, type: 3}
+  goodSceneName: Road
 --- !u!1 &2071905757
 GameObject:
   m_ObjectHideFlags: 0

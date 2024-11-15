@@ -2998,6 +2998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: Bedroom Back
   textJson: {fileID: 4900000, guid: 7b0908507d749e8418ac957dbf63a99c, type: 3}
+  goodSceneName: GoodEnding
 --- !u!1 &902923122
 GameObject:
   m_ObjectHideFlags: 0
