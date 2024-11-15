@@ -8,5 +8,6 @@ Where my specs go ah? These eyes, not so sharp like last time…
 Ah, there you are, always run and hide in the night
 Hah, good morning, mynahs. You all very hardworking, eh? 
 Don’t know what you all talk about every morning, but so steady one, chit-chit, never miss a day
-Better than some people lah."
+Better than some people lah.
+Hmmmm... let me look at my to-do list on the wall
 -> END

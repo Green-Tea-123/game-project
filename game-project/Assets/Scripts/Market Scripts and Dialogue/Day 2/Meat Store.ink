@@ -17,7 +17,7 @@ Aiya dunnid dunnid. This one just take.
 #speaker: Mother #portrait:Happymother
 No lahh come I just buy it from you. you can spend on Carol. 
 #speaker: Uncle Fong #portrait:Unclefong
-?Simi Carol
+Who Carol?
 #speaker: Mother #portrait:Happymother
 Your daughter Carol lah! who else can it be
 #speaker: Uncle Fong #portrait:Unclefong

@@ -11,8 +11,8 @@ Thought it was supposed to make me feel younger, but now feel like old bones get
 Next time, must take it slower… 
 Auntie Siew Fong so energetic, I try to follow her and now look at me, moving like an old tortoise!
 Now… tai chi already done yesterday, so what is today ah? 
-Oh! I remember… today meeting Auntie Leela at the market 
-She says mangoes are in season, must go and find the best ones
+Oh! I remember… today meeting Auntie Siew Fong at the market 
+She says apples are in season, must go and find the best ones
 Surely, she’ll drag me from stall to stall, checking every mango like she’s buying diamonds!
 Just eat some breakfast first, then I'll head out!
 -> END

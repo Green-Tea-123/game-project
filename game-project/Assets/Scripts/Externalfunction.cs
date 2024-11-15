@@ -20,7 +20,7 @@ public class Externalfunction
         story.BindExternalFunction("getMEDICINE_BLUE", () => {
             return MainManager.MEDICINE_BLUE;
         });
-        story.BindExternalFunction("MEDICINE_GREEN", () => {
+        story.BindExternalFunction("getMEDICINE_GREEN", () => {
             return MainManager.MEDICINE_GREEN;
         });
         story.BindExternalFunction("getMEDICINE_YELLOW", () => {
@@ -142,7 +142,7 @@ public class Externalfunction
         story.UnbindExternalFunction("getBreakfast");
         story.UnbindExternalFunction("getMEDICINE_PINK");
         story.UnbindExternalFunction("getMEDICINE_BLUE");
-        story.UnbindExternalFunction("MEDICINE_GREEN");
+        story.UnbindExternalFunction("getMEDICINE_GREEN");
         story.UnbindExternalFunction("getMEDICINE_YELLOW");
         story.UnbindExternalFunction("getTAICHI");
         story.UnbindExternalFunction("getMAHJONG");

@@ -14,15 +14,15 @@ EXTERNAL getGROCERIES_CARDAMOM()
 ===correct_choice===
 ~addGroceries(getGROCERIES_CARDAMOM())
 #speaker: Mother #portrait:Happymother
-Mr. Lim, I want some cardamom to make my famous curry
+Halim, I want some cardamom to make my famous curry
 
-#speaker Mr. Lim #portrait:Mrlim
+#speaker Halim #portrait:Halim
 Here Auntie, some fresh cardamom for you
 Great for curry!
 
 #speaker: Mother #portrait:Happymother
-Wah thanks ah Mr. Lim, maybe I give some to you tomorrow lah
+Wah thanks ah Halim, maybe I give some to you tomorrow lah
 
-#speaker Mr. Lim #portrait:Mrlim
+#speaker Halim #portrait:Halim
 Wah Auntie so kind, I'll look forward to it ah
 -> END
