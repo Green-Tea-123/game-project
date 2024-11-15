@@ -213,17 +213,21 @@ public class MainManager : MonoBehaviour
         Debug.Log("Tasks checked. All tasks completed: " + allTasksCompleted);
         if (!allTasksCompleted)
         {
+            Debug.Log("Tasks not matching");
             incrementDementiaCounter();
         }
 
         bool allMorningMedicineTaken = this.morningMeds.SetEquals(this.morningMedsTaken);
         bool allEveningMedicineTaken = this.eveningMeds.SetEquals(this.eveningMedsTaken);
         if (!(allMorningMedicineTaken && allEveningMedicineTaken)) {
+            Debug.Log("all morning meds taken:" + allMorningMedicineTaken
+                + " all evening meds taken:" + allEveningMedicineTaken);
             incrementDementiaCounter();
         }
 
         bool allGroceriesBought = this.groceries.SetEquals(this.groceriesBought);
         if (!allGroceriesBought) {
+            Debug.Log("Groceries not matching");
             incrementDementiaCounter();
         }
     }
