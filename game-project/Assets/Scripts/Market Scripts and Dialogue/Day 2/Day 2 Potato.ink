@@ -4,7 +4,7 @@ EXTERNAL getGROCERIES_POTATO()
 
 ===start_dialogue===
 #speaker: Mother #portrait:Happymother
-(should I get potatos?)
+(should I get potatoses?)
 *[yes]
 ~addGroceries(getGROCERIES_POTATO())
 Halim ah! Can I get some potatos, please? Fresh ones, ah! Thank you!
