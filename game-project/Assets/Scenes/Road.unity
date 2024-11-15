@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualCue: {fileID: 1030844914}
   day1Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
-  day2Json: {fileID: 4900000, guid: b5c07b400a8926c4a9e49f01bbfc3707, type: 3}
+  day2Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
   day3Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
   day4Json: {fileID: 4900000, guid: 849ddc4ed6858c74aa7b5fd054bf0b77, type: 3}
 --- !u!1 &647855902
