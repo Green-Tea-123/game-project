@@ -81,7 +81,7 @@ public class Externalfunction
             MainManager.instance.addMorningMeds(task);
         });
         story.BindExternalFunction("addEveningMeds", (string task) => {
-            MainManager.instance.addMorningMeds(task);
+            MainManager.instance.addEveningMeds(task);
         });
 
         story.BindExternalFunction("incrementDementiaCounter", () => {
