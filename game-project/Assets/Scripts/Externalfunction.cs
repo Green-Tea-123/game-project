@@ -5,6 +5,7 @@ using Ink.Runtime;
 using UnityEditor.Experimental.GraphView;
 using UnityEditor;
 using UnityEngine.SceneManagement;
+using System.Diagnostics;
 
 public class Externalfunction
 {
@@ -98,11 +99,19 @@ public class Externalfunction
         });
 
         story.BindExternalFunction("notesappear", () => {
-            DialogueManager.GetInstance().showNote();
+            UnityEngine.Debug.Log("note appear called");
+            GameObject note = DialogueManager.GetInstance()
+            .getChildObject("Canvas/Note");
+            UnityEngine.Debug.Log(note);
+            note.SetActive(true);
         });
 
         story.BindExternalFunction("notesdisappear", () => {
-            DialogueManager.GetInstance().hideNote();
+            UnityEngine.Debug.Log("note disappear called");
+            GameObject note = DialogueManager.GetInstance()
+            .getChildObject("Canvas/Note");
+            UnityEngine.Debug.Log(note);
+            note.SetActive(false);
         });
 
         story.BindExternalFunction("caliingnotes", (string filePath) =>
@@ -114,7 +123,7 @@ public class Externalfunction
             }
             else
             {
-                Debug.LogWarning("note");
+                UnityEngine.Debug.LogWarning("note");
             }
         });
 

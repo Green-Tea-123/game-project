@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 77.75789, y: 82.14457}
+  m_AnchoredPosition: {x: 28, y: 67}
   m_SizeDelta: {x: 217.75, y: 50}
   m_Pivot: {x: 0.7407154, y: 0.91596633}
 --- !u!114 &414747823
@@ -735,8 +735,8 @@ MonoBehaviour:
   m_text: "Tuesday              Wednesday\nTai Chi\t        Mahjong @ CC\n                
     Collect Pills\n------------------------------\nThursday                Friday\nShop
     w/            Dinner with\nAuntie SF              family!\n-------------------------------\nRemember
-    to take your medicine!\nMorning: Green, Pink\nEvening: Blue, Yellow\n\nNo green
-    on tuesday, thursday\nNo yellow on monday, wednesday and friday!\n\n\n\n\n\n\n\n\n"
+    to take your medicine!\nMorning: Green, Pink\nEvening: Blue, Yellow\n\nYellow
+    only on tuesday, thursday\nGreen only on monday, wednesday and friday!\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb4de2924ba1abd49b43369c884cef19, type: 2}
   m_sharedMaterial: {fileID: 1124304300917726695, guid: fb4de2924ba1abd49b43369c884cef19, type: 2}
@@ -1861,6 +1861,10 @@ PrefabInstance:
       propertyPath: Notes
       value: 
       objectReference: {fileID: 414747821}
+    - target: {fileID: 1320226464895243105, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2021600786}
     - target: {fileID: 1645163198503164107, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -4155,6 +4159,11 @@ SpriteRenderer:
 --- !u!224 &2021600783 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2680097974783032500, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+  m_PrefabInstance: {fileID: 1381040266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &2021600786 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 134977593858103483, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
   m_PrefabInstance: {fileID: 1381040266}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2032238327
