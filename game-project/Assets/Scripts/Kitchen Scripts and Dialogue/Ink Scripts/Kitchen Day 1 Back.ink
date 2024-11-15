@@ -24,6 +24,4 @@ Aiyoh! My medicine! Almost went to bed without it… that would’ve been bad la
 Ah Boon would nag my ears off if he knew!
 Now… what day is it again? Tuesday?
 So… just the blue pill tonight, right? Yes, yes… green and pink in the morning, blue at night
-There! All done, blegh taste like @%*%!%$ what the *!%$? Can’t they make it nicer?
-Time to go to bed
 -> END
