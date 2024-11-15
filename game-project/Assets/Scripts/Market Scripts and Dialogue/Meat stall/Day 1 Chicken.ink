@@ -7,8 +7,8 @@ EXTERNAL getGROCERIES_CHICKEN()
 (What meat should i get?)
 *[Chicken]
 Uncle Fong! Still got chicken? 
-Ah, okay, okay… how much ah? Wah, price go up again… lucky this chicken soup sedap!
 ~addGroceries(getGROCERIES_CHICKEN())
+Ah, okay, okay… how much ah? Wah, price go up again… lucky this chicken soup sedap!
 -> END
 *[Pork]
 Uncle Fong! Still got Pork? 
