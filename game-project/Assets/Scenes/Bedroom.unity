@@ -1831,8 +1831,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2680097974783032500, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 414747822}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 838103610762294581, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2021600787}
   m_SourcePrefab: {fileID: 100100000, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+--- !u!1 &1381040267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 838103610762294581, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
+  m_PrefabInstance: {fileID: 1381040266}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1430613491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3901,6 +3909,28 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 134977593858103483, guid: 8965051dd5d2d1042b16b5ba7bda4cb5, type: 3}
   m_PrefabInstance: {fileID: 1381040266}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2021600787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381040267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7dc23dd03fab84408406fcaf4b8d802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolutionChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  allowFullscreen: 1
+  aspectRatioWidth: 21351
+  aspectRatioHeight: 10000
+  minWidthPixel: 512
+  minHeightPixel: 512
+  maxWidthPixel: 1960
+  maxHeightPixel: 1080
 --- !u!1 &2032238327
 GameObject:
   m_ObjectHideFlags: 0
