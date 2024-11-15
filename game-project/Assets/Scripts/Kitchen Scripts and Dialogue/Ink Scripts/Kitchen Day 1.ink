@@ -1,3 +1,4 @@
+EXTERNAL colomndisappear(a)
 -> start_dialogue
 
 ===start_dialogue===
@@ -33,6 +34,7 @@ See you boy, take care okay! Love you
 
 #speaker: Son #portrait:HappySon
 Bye ma, Take care of yourself okay!
+~colomndisappear("/Male4_72")
 
 #speaker: Mother #portrait:Happymother
 Wah, boy so busy nowadays
